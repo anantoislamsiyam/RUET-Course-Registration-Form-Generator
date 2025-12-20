@@ -4,12 +4,12 @@ This is a specialized web application designed specifically for students of Rajs
 
 <div align="center">
 
-![RUET Course Registration Generator](https://via.placeholder.com/800x200/1e40af/ffffff?text=RUET+Course+Registration+Form+Generator)
+![RUET Course Registration Generator](https://mechaverse.wealthdock.org/wp-content/uploads/2024/12/Ruet-Hoodie-Mockup-mitsu-Back-design-2048x2048.png)
 *Official Tool for RUET Students*
 
 [![Status](https://img.shields.io/badge/Status-Active-brightgreen)]()
 [![For](https://img.shields.io/badge/For-All_RUET_Students-orange)]()
-[![Format](https://img.shields.io/badge/Official+RUET+Format-Approved-blue)]()
+[![Format](https://img.shields.io/badge/Official_RUET_Format-Approved-blue)]()
 [![License](https://img.shields.io/badge/Property_of-RUET_MechaVerse-purple)]()
 
 </div>

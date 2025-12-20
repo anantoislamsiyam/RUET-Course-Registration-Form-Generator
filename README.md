@@ -3,20 +3,12 @@
 <div align="center">
 
 ![RUET Course Registration Generator](https://mechaverse.wealthdock.org/wp-content/uploads/2024/12/cropped-Ruet-Hoodie-Mockup-mitsu-Back-design.png)
-*Official Tool for RUET Students*
+
 
 [![Status](https://img.shields.io/badge/Status-Active-brightgreen)]()
 [![For](https://img.shields.io/badge/For-All_RUET_Students-orange)]()
 [![Format](https://img.shields.io/badge/Official_RUET_Format-Approved-blue)]()
 [![License](https://img.shields.io/badge/Property_of-RUET_MechaVerse-purple)]()
-
-timeline
-  title MechaVerse Development Roadmap
-  2024 Q4 : Platform Launch
-  2025 Q1 : Mobile App Beta
-  2025 Q2 : AI Tools Integration
-  2025 Q3 : Industry Collaboration
-  2025 Q4 : National Expansion
 
 </div>
 

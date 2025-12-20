@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![RUET Course Registration Generator](https://mechaverse.wealthdock.org/wp-content/uploads/2024/12/cropped-Ruet-Hoodie-Mockup-mitsu-Back-design.png)
+![RUET Course Registration Generator](https://mechaverse.wealthdock.org/wp-content/uploads/2025/12/Logo.png)
 
 
 [![Status](https://img.shields.io/badge/Status-Active-brightgreen)]()

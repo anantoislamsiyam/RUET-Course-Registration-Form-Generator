@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUET Course Registration Form Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8fafc;
+            color: #334155;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header & Banner */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-top: 20px;
+        }
+
+        .banner-container {
+            width: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            margin-bottom: 25px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .banner-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        h1 {
+            color: #1e40af;
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+            font-weight: 800;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #475569;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+
+        /* Badges */
+        .badges {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin: 25px 0 35px;
+        }
+
+        .badge {
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .status { background-color: #d1fae5; color: #065f46; }
+        .for { background-color: #fed7aa; color: #9a3412; }
+        .format { background-color: #dbeafe; color: #1e40af; }
+        .property { background-color: #e9d5ff; color: #7c3aed; }
+
+        /* Main Sections */
+        section {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border: 1px solid #f1f5f9;
+        }
+
+        h2 {
+            color: #1e40af;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e2e8f0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2 i { color: #3b82f6; }
+
+        /* Features Table */
+        .features-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        .features-table th, .features-table td {
+            padding: 18px 15px;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .features-table th {
+            background-color: #f1f5f9;
+            color: #1e293b;
+            font-weight: 700;
+        }
+
+        .features-table tr:hover {
+            background-color: #f8fafc;
+        }
+
+        .feature-icon {
+            font-size: 1.5rem;
+            text-align: center;
+            display: block;
+        }
+
+        /* Quick Start & Steps */
+        .quick-start-box {
+            background: #f0f9ff;
+            border-left: 5px solid #3b82f6;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .quick-start-box h3 {
+            color: #1e40af;
+            margin-bottom: 15px;
+        }
+
+        .steps {
+            background: #1e293b;
+            color: #cbd5e1;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            white-space: pre-line;
+            line-height: 1.8;
+            margin: 20px 0;
+            overflow-x: auto;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(to right, #3b82f6, #1e40af);
+            color: white;
+            padding: 15px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 18px rgba(59, 130, 246, 0.4);
+        }
+
+        /* Developer & Footer */
+        .developer-info, .property-info {
+            background: #f8fafc;
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .property-info {
+            text-align: center;
+            border: 2px dashed #c4b5fd;
+        }
+
+        .property-logo {
+            font-size: 3rem;
+            color: #7c3aed;
+            margin-bottom: 15px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 25px;
+            border-top: 1px solid #e2e8f0;
+            color: #64748b;
+            font-size: 0.95rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container { padding: 15px; }
+            h1 { font-size: 2.2rem; }
+            section { padding: 20px; }
+            .features-table th, .features-table td { padding: 12px 10px; }
+            .features-table { display: block; overflow-x: auto; }
+            .badges { gap: 8px; }
+            .badge { font-size: 0.8rem; padding: 6px 12px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="banner-container">
+                <!-- Banner Image from provided URL -->
+                <img src="https://mechaverse.wealthdock.org/wp-content/uploads/2024/12/cropped-Ruet-Hoodie-Mockup-mitsu-Back-design.png" alt="RUET Course Registration Generator Banner">
+            </div>
+            <h1>RUET Course Registration Form Generator</h1>
+            <p class="subtitle">Official Tool for Rajshahi University of Engineering & Technology (RUET) Students</p>
+
+            <div class="badges">
+                <span class="badge status"><i class="fas fa-circle-check"></i> Status: Active</span>
+                <span class="badge for"><i class="fas fa-users"></i> For: All RUET Students</span>
+                <span class="badge format"><i class="fas fa-stamp"></i> Official RUET Format: Approved</span>
+                <span class="badge property"><i class="fas fa-copyright"></i> Property of: RUET MechaVerse</span>
+            </div>
+        </header>
+
+        <main>
+            <section id="about">
+                <h2><i class="fas fa-info-circle"></i> About</h2>
+                <p>The <strong>RUET Course Registration Form Generator</strong> is a specialized web application designed specifically for students of <strong>Rajshahi University of Engineering & Technology (RUET)</strong> to generate their course registration forms in the official university format.</p>
+                <p>The tool automates the process of creating registration forms, ensuring compliance with RUET's official formatting requirements while providing an intuitive and user-friendly interface.</p>
+            </section>
+
+            <section id="features">
+                <h2><i class="fas fa-star"></i> Features</h2>
+                <table class="features-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Description</th>
+                            <th>Icon</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Smart Course Search</strong></td>
+                            <td>Quickly find courses by code or title with intelligent autocomplete suggestions</td>
+                            <td><span class="feature-icon">🔍</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Automated Calculations</strong></td>
+                            <td>Automatic total credit calculation as you add courses</td>
+                            <td><span class="feature-icon">🧮</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Real-time Preview</strong></td>
+                            <td>Instant PDF preview before downloading</td>
+                            <td><span class="feature-icon">👁️</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Easy Course Management</strong></td>
+                            <td>Add or remove courses with single clicks</td>
+                            <td><span class="feature-icon">✅</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Backlog Course Tracking</strong></td>
+                            <td>Dedicated section for backlog courses</td>
+                            <td><span class="feature-icon">📚</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Official Format</strong></td>
+                            <td>Generates PDF in RUET's official registration form format</td>
+                            <td><span class="feature-icon">🏛️</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Comprehensive Database</strong></td>
+                            <td>Pre-loaded with courses from all Engineering Departments</td>
+                            <td><span class="feature-icon">🗃️</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="quick-start">
+                <h2><i class="fas fa-rocket"></i> Quick Start</h2>
+                <div class="quick-start-box">
+                    <h3><i class="fas fa-globe"></i> Online Access</h3>
+                    <p>Visit the live application using the link below. If the page is not found (404), the application may be under maintenance or the URL has changed.</p>
+                    <a href="https://mechaverse.wealthdock.org/course-registration/" class="cta-button" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> Go to Registration Generator
+                    </a>
+                </div>
+
+                <h3><i class="fas fa-list-ol"></i> How to Use</h3>
+                <div class="steps">
+1. Open the registration form generator
+2. Enter your student information
+3. Search and add courses using smart search
+4. Add backlog courses if applicable
+5. Preview your form in real-time
+6. Download the official PDF format
+7. Print and submit to your department</div>
+            </section>
+
+            <section id="developer">
+                <h2><i class="fas fa-user-tie"></i> Developer</h2>
+                <div class="developer-info">
+                    <p><strong>Md. Ananto Islam Siyam</strong></p>
+                    <p>23 Series, Department of Mechanical Engineering</p>
+                    <p>Rajshahi University of Engineering & Technology (RUET)</p>
+                </div>
+            </section>
+
+            <section id="property">
+                <h2><i class="fas fa-home"></i> Project Home</h2>
+                <div class="property-info">
+                    <div class="property-logo">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Property of RUET MechaVerse</h3>
+                    <p>A platform dedicated to Mechanical Engineering students of RUET</p>
+                    <p style="margin-top: 15px;">
+                        <strong>Visit:</strong>
+                        <a href="https://mechaverse.wealthdock.org" style="color: #7c3aed; font-weight: bold;">RUET MechaVerse</a>
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>📅 Last Updated: October 2024 | ⚙️ Version: 1.0 | 🎯 Developed For: RUET Student Community</p>
+            <p style="margin-top: 15px; font-style: italic;">"Simplifying Academic Processes Through Technology"</p>
+            <p style="margin-top: 30px; font-size: 0.85rem; color: #94a3b8;">
+                RUET Course Registration Generator — Official Tool for All Students
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        // Simple script to add a smooth scroll to anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 20,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Add a warning if the main application link is clicked (optional)
+        const appLink = document.querySelector('a.cta-button');
+        if(appLink) {
+            appLink.addEventListener('click', function() {
+                console.log('Note: The application link is pointing to the URL you provided. If the page shows a 404, it may need updating.');
+            });
+        }
+    </script>
+</body>
+</html>

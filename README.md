@@ -7,7 +7,6 @@ This is a specialized web application designed specifically for students of Rajs
 ![RUET Course Registration Generator](https://via.placeholder.com/800x200/1e40af/ffffff?text=RUET+Course+Registration+Form+Generator)
 *Official Tool for RUET Students*
 
-[![Website](https://img.shields.io/badge/Web-App-Live-green)](https://mechaverse.wealthdock.org/course-registration)
 [![Status](https://img.shields.io/badge/Status-Active-brightgreen)]()
 [![For](https://img.shields.io/badge/For-All_RUET_Students-orange)]()
 [![Format](https://img.shields.io/badge/Official+RUET+Format-Approved-blue)]()

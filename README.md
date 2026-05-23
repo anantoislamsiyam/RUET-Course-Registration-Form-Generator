@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![RUET Course Registration Generator](https://mechaverse.wealthdock.org/wp-content/uploads/2025/12/Logo.png)
+![RUET Course Registration Generator](https://mechaverse.great-site.net/wp-content/uploads/2025/12/Logo.png)
 
 
 [![Status](https://img.shields.io/badge/Status-Active-brightgreen)]()
@@ -31,7 +31,7 @@ The tool automates the process of creating registration forms, ensuring complian
 ## 🚀 Quick Start
 
 ### Online Access
-Visit the live application: [https://mechaverse.wealthdock.org/course-registration](https://mechaverse.wealthdock.org/course-registration/)
+Visit the live application: [https://mechaverse.great-site.net/course-registration](https://mechaverse.great-site.net/course-registration/)
 
 ### How to Use
 ```plaintext
